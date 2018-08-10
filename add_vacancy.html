@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,15 +43,15 @@
 
 					<li> <a href="index"> <i class="fa fa-dashboard"></i> Dashboard </a> </li>
 					<li> <a href="employee"> <i class="fa fa-group"></i> Employees </a> </li>
-					<li class="active"> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>
-
-						<ul>
-							<li> <a href="holidays"> Holidays </a> </li>
-							<li> <a href="attendance"> Attendance </a> </li>
-							<li> <a href="leaveType"> Leave Type </a> </li>
+					<li> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>	
+					<li class="active"> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
+						<ul>							
+							<li> <a href="jobTitle"> Job Title </a> </li>
+							<li> <a href="jobCategories"> Job Categories </a> </li>
+							<li> <a href="workShift"> Work Shift </a> </li>
+							<li> <a href="candidate"> Candidates </a> </li>
+							<li class="submenu_active"> <a href="jobVacancy"> Job Vacancy </a> </li>
 						</ul>
-					
-					<li> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
 					<li> <a href="performance"> <i class="fa fa-line-chart"></i> Performance </a> </li>
 					<li> <a href=""> <i class="fa fa-gears"></i> Training </a> </li>
 					<li> <a href=""> <i class="fa fa-credit-card"></i> Payroll </a> </li>
@@ -68,7 +67,7 @@
 		<section class="dashboard">
 			
 			<div class="dashboard_header">
-				<h6>Add Leave Request</h6>
+				<h6>Add Vacancy</h6>
 
 				<div class="clear"></div>
 			</div><!-- dashboard_header ends here -->
@@ -79,48 +78,45 @@
 
 					<form action="#" method="POST">
 
-						<div class="leaveForm">
-							
+						<div class="leaveForm">		
+
 							<div class="leaveForm_group">
-								<label>Leave Type</label>
-								<select name="leave_type" class="leave_drp" required="required">
-									<option value="0">-- Select Leave Type --</option>
-									<option value="Casual Leave">Casual Leave</option>
-									<option value="Medical Leave">Medical Leave</option>
-									<option value="Loss of Pay">Loss of Pay</option>
+								<label>Job Title</label>
+								<select name="jobTitle" class="leave_drp" required="required">
+									<option></option>
 								</select>
 							</div>
 
 							<div class="leaveForm_group">
-								<label>From</label>
-								<input type="date" name="from" class="leave_txt" required="required">
+								<label>Vacancy Name</label>
+								<input type="text" name="vacancyName" class="leave_txt" placeholder="Vacancy Name" required="required">
 							</div>
 
 							<div class="leaveForm_group">
-								<label>To</label>
-								<input type="date" name="to" class="leave_txt" required="required">
+								<label>Hiring Manager</label>
+								<input type="text" name="hiringManager" class="leave_txt" placeholder="Hiring Manager" required="required">
 							</div>
 
 							<div class="leaveForm_group">
-								<label>No of Days</label>
-								<input type="text" name="no_of_days" placeholder="No of Days" class="leave_txt" required="required">
+								<label>Number of Positions</label>
+								<input type="text" name="noOfPosition" class="leave_txt" placeholder="Number of Positions" required="required">
 							</div>
 
 							<div class="leaveForm_group">
-								<label>Remaing Leaves</label>
-								<input type="text" name="remaining_leaves" placeholder="Remaing Leaves" class="leave_txt" required="required">
+								<label>Desciption</label>
+								<textarea name="desciption" class="leave_txtarea" required="required"></textarea>
 							</div>
 
 							<div class="leaveForm_group">
-								<label>Leave Reason</label>
-								<textarea name="leave_reason" class="leave_txtarea" required="required"></textarea>
-							</div>
+								<label>Active</label>
+								<input type="checkbox" name="active" required="required">
+							</div>						
 
 							<div class="clear"></div>
-						</div>						
+						</div>
 
 						<div class="btn_wrapper">
-							<input type="submit" name="submit" value="Send Leave Request" class="emp_btn">
+							<input type="submit" name="submit" value="Add Vacancy" class="emp_btn">
 						</div>
 					</form>
 					

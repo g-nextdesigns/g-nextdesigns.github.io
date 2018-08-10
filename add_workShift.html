@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"></script>
+
+</head>
+<body>
+	<div class="wrapper_class">
+		
+		<header>
+			<div class="logo"></div>
+
+			<div class="notifications"></div>
+		</header>
+
+		<section class="sidebar">
+			
+			<div class="sidebar_header">
+				
+				<div class="user_pic">
+					
+				</div><!-- User profile pic ends here -->
+
+				<div class="username_status">
+					<h1>Username</h1>
+					<h4>Online</h4>
+				</div><!-- username_status ends here -->
+
+				<div class="clear"></div>
+			</div><!-- Sidebar_header ends here -->
+
+			<div class="sidebar_body">
+				
+				<ul>
+
+					<li> <a href="index"> <i class="fa fa-dashboard"></i> Dashboard </a> </li>
+					<li> <a href="employee"> <i class="fa fa-group"></i> Employees </a> </li>
+					<li> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>	
+					<li class="active"> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
+						<ul>							
+							<li> <a href="jobTitle"> Job Title </a> </li>
+							<li> <a href="jobCategories"> Job Categories </a> </li>
+							<li class="submenu_active"> <a href="workShift"> Work Shift </a> </li>
+							<li> <a href="candidate"> Candidates </a> </li>
+							<li> <a href="jobVacancy"> Job Vacancy </a> </li>
+						</ul>
+					<li> <a href="performance"> <i class="fa fa-line-chart"></i> Performance </a> </li>
+					<li> <a href=""> <i class="fa fa-gears"></i> Training </a> </li>
+					<li> <a href=""> <i class="fa fa-credit-card"></i> Payroll </a> </li>
+					<li> <a href=""> <i class="fa fa-power-off"></i> Logout </a> </li>
+
+				</ul><!-- Sidebar menu ends here -->
+
+
+				<div class="clear"></div>
+			</div><!-- Sidebar_body ends here -->
+
+		</section><!-- Sidebar section ends here -->
+
+		<section class="dashboard">
+			
+			<div class="dashboard_header">
+				<h6>Add Work Shift</h6>
+
+				<div class="clear"></div>
+			</div><!-- dashboard_header ends here -->
+
+			<div class="dashboard_body">		
+
+				<div class="dashboard_body_wrapper">
+
+					<form action="#" method="POST">
+
+						<div class="leaveForm">							
+							
+
+							<div class="leaveForm_group">
+								<label>Shift Name</label>
+								<input type="text" name="shiftName" class="leave_txt" placeholder="Shift Name" required="required">
+							</div>
+
+							<div class="leaveForm_group">
+								
+								<select name="from" class="srch_leave_drp">
+									<option value="" selected="selected">From</option>
+									<option value="00:00">00:00</option>
+									<option value="00:15">00:15</option>
+									<option value="00:30">00:30</option>
+									<option value="00:45">00:45</option>
+									<option value="01:00">01:00</option>
+									<option value="01:15">01:15</option>
+									<option value="01:30">01:30</option>
+									<option value="01:45">01:45</option>
+									<option value="02:00">02:00</option>
+									<option value="02:15">02:15</option>
+									<option value="02:30">02:30</option>
+									<option value="02:45">02:45</option>
+									<option value="03:00">03:00</option>
+									<option value="03:15">03:15</option>
+									<option value="03:30">03:30</option>
+									<option value="03:45">03:45</option>
+									<option value="04:00">04:00</option>
+									<option value="04:15">04:15</option>
+									<option value="04:30">04:30</option>
+									<option value="04:45">04:45</option>
+									<option value="05:00">05:00</option>
+									<option value="05:15">05:15</option>
+									<option value="05:30">05:30</option>
+									<option value="05:45">05:45</option>
+									<option value="06:00">06:00</option>
+									<option value="06:15">06:15</option>
+									<option value="06:30">06:30</option>
+									<option value="06:45">06:45</option>
+									<option value="07:00">07:00</option>
+									<option value="07:15">07:15</option>
+									<option value="07:30">07:30</option>
+									<option value="07:45">07:45</option>
+									<option value="08:00">08:00</option>
+									<option value="08:15">08:15</option>
+									<option value="08:30">08:30</option>
+									<option value="08:45">08:45</option>
+									<option value="09:00">09:00</option>
+									<option value="09:15">09:15</option>
+									<option value="09:30">09:30</option>
+									<option value="09:45">09:45</option>
+									<option value="10:00">10:00</option>
+									<option value="10:15">10:15</option>
+									<option value="10:30">10:30</option>
+									<option value="10:45">10:45</option>
+									<option value="11:00">11:00</option>
+									<option value="11:15">11:15</option>
+									<option value="11:30">11:30</option>
+									<option value="11:45">11:45</option>
+									<option value="12:00">12:00</option>
+									<option value="12:15">12:15</option>
+									<option value="12:30">12:30</option>
+									<option value="12:45">12:45</option>
+									<option value="13:00">13:00</option>
+									<option value="13:15">13:15</option>
+									<option value="13:30">13:30</option>
+									<option value="13:45">13:45</option>
+									<option value="14:00">14:00</option>
+									<option value="14:15">14:15</option>
+									<option value="14:30">14:30</option>
+									<option value="14:45">14:45</option>
+									<option value="15:00">15:00</option>
+									<option value="15:15">15:15</option>
+									<option value="15:30">15:30</option>
+									<option value="15:45">15:45</option>
+									<option value="16:00">16:00</option>
+									<option value="16:15">16:15</option>
+									<option value="16:30">16:30</option>
+									<option value="16:45">16:45</option>
+									<option value="17:00">17:00</option>
+									<option value="17:15">17:15</option>
+									<option value="17:30">17:30</option>
+									<option value="17:45">17:45</option>
+									<option value="18:00">18:00</option>
+									<option value="18:15">18:15</option>
+									<option value="18:30">18:30</option>
+									<option value="18:45">18:45</option>
+									<option value="19:00">19:00</option>
+									<option value="19:15">19:15</option>
+									<option value="19:30">19:30</option>
+									<option value="19:45">19:45</option>
+									<option value="20:00">20:00</option>
+									<option value="20:15">20:15</option>
+									<option value="20:30">20:30</option>
+									<option value="20:45">20:45</option>
+									<option value="21:00">21:00</option>
+									<option value="21:15">21:15</option>
+									<option value="21:30">21:30</option>
+									<option value="21:45">21:45</option>
+									<option value="22:00">22:00</option>
+									<option value="22:15">22:15</option>
+									<option value="22:30">22:30</option>
+									<option value="22:45">22:45</option>
+									<option value="23:00">23:00</option>
+									<option value="23:15">23:15</option>
+									<option value="23:30">23:30</option>
+									<option value="23:45">23:45</option>
+								</select>
+
+								
+
+								<select name="from" class="srch_leave_drp">
+									<option value="" selected="selected">To</option>
+									<option value="00:00">00:00</option>
+									<option value="00:15">00:15</option>
+									<option value="00:30">00:30</option>
+									<option value="00:45">00:45</option>
+									<option value="01:00">01:00</option>
+									<option value="01:15">01:15</option>
+									<option value="01:30">01:30</option>
+									<option value="01:45">01:45</option>
+									<option value="02:00">02:00</option>
+									<option value="02:15">02:15</option>
+									<option value="02:30">02:30</option>
+									<option value="02:45">02:45</option>
+									<option value="03:00">03:00</option>
+									<option value="03:15">03:15</option>
+									<option value="03:30">03:30</option>
+									<option value="03:45">03:45</option>
+									<option value="04:00">04:00</option>
+									<option value="04:15">04:15</option>
+									<option value="04:30">04:30</option>
+									<option value="04:45">04:45</option>
+									<option value="05:00">05:00</option>
+									<option value="05:15">05:15</option>
+									<option value="05:30">05:30</option>
+									<option value="05:45">05:45</option>
+									<option value="06:00">06:00</option>
+									<option value="06:15">06:15</option>
+									<option value="06:30">06:30</option>
+									<option value="06:45">06:45</option>
+									<option value="07:00">07:00</option>
+									<option value="07:15">07:15</option>
+									<option value="07:30">07:30</option>
+									<option value="07:45">07:45</option>
+									<option value="08:00">08:00</option>
+									<option value="08:15">08:15</option>
+									<option value="08:30">08:30</option>
+									<option value="08:45">08:45</option>
+									<option value="09:00">09:00</option>
+									<option value="09:15">09:15</option>
+									<option value="09:30">09:30</option>
+									<option value="09:45">09:45</option>
+									<option value="10:00">10:00</option>
+									<option value="10:15">10:15</option>
+									<option value="10:30">10:30</option>
+									<option value="10:45">10:45</option>
+									<option value="11:00">11:00</option>
+									<option value="11:15">11:15</option>
+									<option value="11:30">11:30</option>
+									<option value="11:45">11:45</option>
+									<option value="12:00">12:00</option>
+									<option value="12:15">12:15</option>
+									<option value="12:30">12:30</option>
+									<option value="12:45">12:45</option>
+									<option value="13:00">13:00</option>
+									<option value="13:15">13:15</option>
+									<option value="13:30">13:30</option>
+									<option value="13:45">13:45</option>
+									<option value="14:00">14:00</option>
+									<option value="14:15">14:15</option>
+									<option value="14:30">14:30</option>
+									<option value="14:45">14:45</option>
+									<option value="15:00">15:00</option>
+									<option value="15:15">15:15</option>
+									<option value="15:30">15:30</option>
+									<option value="15:45">15:45</option>
+									<option value="16:00">16:00</option>
+									<option value="16:15">16:15</option>
+									<option value="16:30">16:30</option>
+									<option value="16:45">16:45</option>
+									<option value="17:00">17:00</option>
+									<option value="17:15">17:15</option>
+									<option value="17:30">17:30</option>
+									<option value="17:45">17:45</option>
+									<option value="18:00">18:00</option>
+									<option value="18:15">18:15</option>
+									<option value="18:30">18:30</option>
+									<option value="18:45">18:45</option>
+									<option value="19:00">19:00</option>
+									<option value="19:15">19:15</option>
+									<option value="19:30">19:30</option>
+									<option value="19:45">19:45</option>
+									<option value="20:00">20:00</option>
+									<option value="20:15">20:15</option>
+									<option value="20:30">20:30</option>
+									<option value="20:45">20:45</option>
+									<option value="21:00">21:00</option>
+									<option value="21:15">21:15</option>
+									<option value="21:30">21:30</option>
+									<option value="21:45">21:45</option>
+									<option value="22:00">22:00</option>
+									<option value="22:15">22:15</option>
+									<option value="22:30">22:30</option>
+									<option value="22:45">22:45</option>
+									<option value="23:00">23:00</option>
+									<option value="23:15">23:15</option>
+									<option value="23:30">23:30</option>
+									<option value="23:45">23:45</option>
+								</select>
+								
+								<input type="text" name="duration" value="8" disabled="disabled" class="srch_leave_txt">
+
+								<div class="clear"></div>
+							</div>
+
+							<div class="leaveForm_group">
+								<label>Hours per Day</label>
+								<input type="text" name="anually" class="leave_txt" placeholder="Hours per Day" required="required" >
+							</div>					
+
+
+							<div class="clear"></div>
+						</div>						
+
+						<div class="btn_wrapper">
+							<input type="submit" name="submit" value="Add Work Shift" class="emp_btn">
+						</div>
+					</form>
+					
+					<div class="clear"></div>			       	
+				</div><!-- dashboard_body_wrapper ends here -->
+				
+				<div class="clear"></div>
+			</div><!-- dashboard_body ends here -->
+
+			<div class="clear"></div>
+		</section><!-- Dashboard section ends here -->
+
+		<!-- <footer>
+			<p>&copy;Copyright 2018, All rights reserved. Developed By <a href="https://www.g-nextdesigns.com">G-Next Designs</a> </p>
+		</footer> -->
+
+		<div class="clear"></div>
+	</div><!-- Wrapper class ends here -->
+</body>
+</html>

@@ -45,14 +45,15 @@
 					<li> <a href="index"> <i class="fa fa-dashboard"></i> Dashboard </a> </li>
 					<li> <a href="employee"> <i class="fa fa-group"></i> Employees </a> </li>
 					<li> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>	
-					<li class="active"> <a href="recruitments"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
+					<li class="active"> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
 						<ul>							
 							<li> <a href="jobTitle"> Job Title </a> </li>
+							<li> <a href="jobCategories"> Job Categories </a> </li>
 							<li> <a href="workShift"> Work Shift </a> </li>
-							<li> <a href="candidate"> Candidates </a> </li>
+							<li class="submenu_active"> <a href="candidate"> Candidates </a> </li>
 							<li> <a href="jobVacancy"> Job Vacancy </a> </li>
 						</ul>
-					<li> <a href=""> <i class="fa fa-line-chart"></i> Performance </a> </li>
+					<li> <a href="performance"> <i class="fa fa-line-chart"></i> Performance </a> </li>
 					<li> <a href=""> <i class="fa fa-gears"></i> Training </a> </li>
 					<li> <a href=""> <i class="fa fa-credit-card"></i> Payroll </a> </li>
 					<li> <a href=""> <i class="fa fa-power-off"></i> Logout </a> </li>
@@ -67,38 +68,14 @@
 		<section class="dashboard">
 			
 			<div class="dashboard_header">
-				<h6>Leaves Details</h6>
+				<h6>Candidates Details</h6>
 
-				<h6><a href="add_leave"> <i class="fa fa-plus"></i> Add Leave </a></h6>
+				<h6><a href="add_candidate"> <i class="fa fa-plus"></i> Add Candidate </a></h6>
 
 				<div class="clear"></div>
 			</div><!-- dashboard_header ends here -->
 
 			<div class="dashboard_body">		
-
-				<div class="dashboard_body_header">
-					<form action="#" method="post">
-
-						<input type="text" name="emp_name" placeholder="Employee Name" class="srch_leave_txt">
-
-						<select name="leave_type" class="srch_leave_drp">
-							<option value="0">-- Leave Type --</option>
-						</select>
-
-						<select name="leave_status" class="srch_leave_drp">
-							<option value="0">-- Leave Status --</option>
-						</select>
-
-						<input type="date" name="from" placeholder="From" class="srch_leave_txt">
-
-						<input type="date" name="to" placeholder="To" class="srch_leave_txt">						
-
-						<input type="submit" name="submit" value="Search" class="srch_leave_btn">
-
-					</form>
-
-					<div class="clear"></div>
-				</div><!-- dashboard_body_header ends here -->		
 
 				<div class="dashboard_body_wrapper">
 
@@ -106,70 +83,69 @@
 
 						<thead>
 							<tr>
-								<th>Employee Name</th>
-								<th>Leave Type</th>
-								<th>From</th>
-								<th>To</th>
-								<th>No of Days</th>
-								<th>Reason</th>
+								<th>Job Vacancy</th>
+								<th>Candidate</th>
+								<th>Hiring Manager</th>
+								<th>Date of Application</th>
 								<th>Status</th>
+								<th>Resume</th>
 								<th>Action</th>
 							</tr>
 						</thead>
 
 						<tbody>
 							<tr>
-								<td class="text_align"><div class="user_pic_list"></div><span class="alignment"> John Doe <p>Web Developer</p></span></td>
-								<td>Casual Leave</td>
-								<td>1 Jan 2013</td>
-								<td>4 Jan 2013</td>
-								<td>4</td>
-								<td>Going to Hospital</td>
-								<td>Approved</td>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
 								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
 							</tr>
-
 							<tr>
-								<td class="text_align"><div class="user_pic_list"></div><span class="alignment"> Andrew Smith <p>Web Developer</p></span></td>
-								<td>Casual Leave</td>
-								<td>20 Feb 2013</td>
-								<td>21 Feb 2013</td>
-								<td>1</td>
-								<td>Family</td>
-								<td>Approved</td>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
 								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
 							</tr>
-
 							<tr>
-								<td class="text_align"><div class="user_pic_list"></div><span class="alignment"> Alizabeth <p>Web Developer</p></span></td>
-								<td>Medical Leave</td>
-								<td>5 Jan 2013</td>
-								<td>7 Jan 2013</td>
-								<td>3</td>
-								<td>Hospitalized</td>
-								<td>Approved</td>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
 								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
 							</tr>
-
 							<tr>
-								<td class="text_align"><div class="user_pic_list"></div><span class="alignment"> John Doe <p>Web Developer</p></span></td>
-								<td>Casual Leave</td>
-								<td>1 Jan 2013</td>
-								<td>4 Jan 2013</td>
-								<td>4</td>
-								<td>Going to Hospital</td>
-								<td>Approved</td>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
 								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
 							</tr>
-
 							<tr>
-								<td class="text_align"><div class="user_pic_list"></div><span class="alignment"> John Doe <p>Web Developer</p></span></td>
-								<td>Casual Leave</td>
-								<td>1 Jan 2013</td>
-								<td>4 Jan 2013</td>
-								<td>4</td>
-								<td>Going to Hospital</td>
-								<td>Approved</td>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
+							<tr>
+								<td class="text_align">Web Developer Intern</td>
+								<td>Alizabeth Drumer</td>
+								<td>John Doe</td>
+								<td>1 Jan 2013</td>								
+								<td>Shortlisted</td>
+								<td>Yes</td>
 								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
 							</tr>
 						</tbody>

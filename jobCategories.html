@@ -44,15 +44,15 @@
 
 					<li> <a href="index"> <i class="fa fa-dashboard"></i> Dashboard </a> </li>
 					<li> <a href="employee"> <i class="fa fa-group"></i> Employees </a> </li>
-					<li class="active"> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>
-
-						<ul>
-							<li> <a href="holidays"> Holidays </a> </li>
-							<li> <a href="attendance"> Attendance </a> </li>
-							<li> <a href="leaveType"> Leave Type </a> </li>
+					<li> <a href="leave"> <i class="fa fa-calendar-times-o"></i> Leave </a> </li>	
+					<li class="active"> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
+						<ul>							
+							<li> <a href="jobTitle"> Job Title </a> </li>
+							<li class="submenu_active"> <a href="jobCategories"> Job Categories </a> </li>
+							<li> <a href="workShift"> Work Shift </a> </li>
+							<li> <a href="candidate"> Candidates </a> </li>
+							<li> <a href="jobVacancy"> Job Vacancy </a> </li>
 						</ul>
-					
-					<li> <a href="jobTitle"> <i class="fa fa-user-plus"></i> Recruitments </a> </li>
 					<li> <a href="performance"> <i class="fa fa-line-chart"></i> Performance </a> </li>
 					<li> <a href=""> <i class="fa fa-gears"></i> Training </a> </li>
 					<li> <a href=""> <i class="fa fa-credit-card"></i> Payroll </a> </li>
@@ -68,61 +68,74 @@
 		<section class="dashboard">
 			
 			<div class="dashboard_header">
-				<h6>Add Leave Request</h6>
+				<h6>Job Categories</h6>
+
+				<h6><a href="add_jobCat"> <i class="fa fa-plus"></i> Add Categories </a></h6>
 
 				<div class="clear"></div>
 			</div><!-- dashboard_header ends here -->
 
-			<div class="dashboard_body">		
+			<div class="dashboard_body">						
 
 				<div class="dashboard_body_wrapper">
 
-					<form action="#" method="POST">
+					<table class="table-striped">
 
-						<div class="leaveForm">
-							
-							<div class="leaveForm_group">
-								<label>Leave Type</label>
-								<select name="leave_type" class="leave_drp" required="required">
-									<option value="0">-- Select Leave Type --</option>
-									<option value="Casual Leave">Casual Leave</option>
-									<option value="Medical Leave">Medical Leave</option>
-									<option value="Loss of Pay">Loss of Pay</option>
-								</select>
-							</div>
+						<thead>
+							<tr>
+								<th>Job Categoty</th>
+								<th>Action</th>
+							</tr>
+						</thead>
 
-							<div class="leaveForm_group">
-								<label>From</label>
-								<input type="date" name="from" class="leave_txt" required="required">
-							</div>
+						<tbody>
+							<tr>								
+								<td>Craft Workers </td>
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-							<div class="leaveForm_group">
-								<label>To</label>
-								<input type="date" name="to" class="leave_txt" required="required">
-							</div>
+							<tr>								
+								<td>Laborers and Helpers </td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-							<div class="leaveForm_group">
-								<label>No of Days</label>
-								<input type="text" name="no_of_days" placeholder="No of Days" class="leave_txt" required="required">
-							</div>
+							<tr>
+								<td>Office and Clerical Workers</td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>	
+							<tr>								
+								<td>Officials and Managers</td>
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-							<div class="leaveForm_group">
-								<label>Remaing Leaves</label>
-								<input type="text" name="remaining_leaves" placeholder="Remaing Leaves" class="leave_txt" required="required">
-							</div>
+							<tr>								
+								<td>Operatives</td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-							<div class="leaveForm_group">
-								<label>Leave Reason</label>
-								<textarea name="leave_reason" class="leave_txtarea" required="required"></textarea>
-							</div>
+							<tr>
+								<td>Professionals</td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
+							<tr>								
+								<td>Sales Workers</td>
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-							<div class="clear"></div>
-						</div>						
+							<tr>								
+								<td>Service Workers</td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>
 
-						<div class="btn_wrapper">
-							<input type="submit" name="submit" value="Send Leave Request" class="emp_btn">
-						</div>
-					</form>
+							<tr>
+								<td>Technicians</td>						
+								<td><a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+							</tr>						
+						</tbody>
+
+					</table>
+
+
 					
 					<div class="clear"></div>			       	
 				</div><!-- dashboard_body_wrapper ends here -->
